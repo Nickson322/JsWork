@@ -11,10 +11,10 @@
 
 const myCities = ['London', 'New York', 'Singapore']
 
-cityInfo = (city, i) => {
-    return city + " is at the index " + i + " in the myCities array"
+function cityInfo(item, i){
+    for(item, i; i < myCities.length; item++, i++){
+        console.log((myCities[item] + " is at the index " + i + " in the myCities array"))
+    }
 }
 
-for(let i in myCities){
-    console.log(cityInfo(myCities[i], i));
-}
+cityInfo(0,0)

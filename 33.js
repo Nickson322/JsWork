@@ -7,10 +7,8 @@
  * 3. Замените обычную функцию на стрелочную функцию
  */
 
-isArrayEmpty = (inputArray) => {
-  (inputArray.length > 0) 
-  ? console.log('Массив не пустой')
-  : console.log('Массив пустой')
+function isArrayEmpty(inputArray) {
+  return inputArray.length > 0 ? 'Массив не пустой' : 'Массив пустой';
 }
 
 console.log(isArrayEmpty([1, 3]))
